@@ -40,4 +40,19 @@ public class PrisonFunctions {
         lockdown();
         System.out.println("Заключение в одиночную камеру.");
     }
+
+    public static void main(String[] args) {
+        countPrisoners();
+        lockdown();
+
+        PrisonFunctions prison = new PrisonFunctions();
+        prison.exerciseYard();
+        prison.mailCall();
+        prison.paroleHearing();
+        prison.visitorRegistration();
+        prison.contrabandCheck();
+        prison.solitaryConfinement();
+        
+    }
+
 }
