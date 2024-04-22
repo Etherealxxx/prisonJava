@@ -1,4 +1,5 @@
 package org.example;
+import java.util.Scanner;
 
 public class PrisonFunctions {
     public static void lockdown() {
@@ -51,5 +52,23 @@ public class PrisonFunctions {
         prison.visitorRegistration();
         prison.contrabandCheck();
         prison.solitaryConfinement();
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Выберите действие: ");
+        System.out.println("1. Разрешить доступ к прогулке.");
+        System.out.println("2. Запретить доступ к прогулке.");
+        int choice = scanner.nextInt();
+        switch (choice) {
+            case 1:
+                prison.exerciseYard();
+                break;
+            case 2:
+                prison.lockdown();
+                break;
+            default:
+                System.out.println("Недопустимый выбор.");
+        }
+        scanner.close();
     }
+
 }
