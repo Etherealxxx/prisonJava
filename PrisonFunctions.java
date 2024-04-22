@@ -13,6 +13,7 @@ public class PrisonFunctions {
         int totalPrisoners = 30;
         System.out.println("Общее количество заключенных в тюрьме: " + totalPrisoners);
     }
+
     public void exerciseYard() {
         System.out.println("Время для прогулки.");
     }
@@ -24,6 +25,7 @@ public class PrisonFunctions {
     public void paroleHearing() {
         System.out.println("Заседание по делу удо.");
     }
+
     public void visitorRegistration() {
         visitationHours();
         System.out.println("Процедура регистрации посетителей.");
@@ -44,6 +46,10 @@ public class PrisonFunctions {
 
         PrisonFunctions prison = new PrisonFunctions();
         prison.exerciseYard();
+        prison.mailCall();
+        prison.paroleHearing();
         prison.visitorRegistration();
+        prison.contrabandCheck();
+        prison.solitaryConfinement();
     }
 }
