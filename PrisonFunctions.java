@@ -54,5 +54,5 @@ public class PrisonFunctions {
         prison.solitaryConfinement();
         
     }
-
+//СЭР ДА СЭР 
 }
